@@ -19,7 +19,7 @@
         spaceenter: spaceenter {
             compatible = "zmk,behavior-hold-tap";
             label = "SPACEENTER";
-            bindings = <&kp>, <&kp>;
+            bindings = <&kp SPACE>, <&kp ENTER>;
 
             #binding-cells = <2>;
             hold-trigger-key-positions = <43>;
