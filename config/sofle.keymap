@@ -16,6 +16,15 @@
             #sensor-binding-cells = <0>;
             bindings = <&kp C_VOLUME_UP>, <&kp C_VOLUME_DOWN>;
         };
+        spaceenter: spaceenter {
+            compatible = "zmk,behavior-hold-tap";
+            label = "SPACEENTER";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            hold-trigger-key-positions = <43>;
+            tapping-term-ms = <22>;
+        };
     };
 
     keymap {
