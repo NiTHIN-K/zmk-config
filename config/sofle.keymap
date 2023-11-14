@@ -10,21 +10,6 @@
 
 / {
     behaviors {
-        new_behavior: new_behavior {
-            compatible = "zmk,behavior-sensor-rotate";
-            label = "NEW_BEHAVIOR";
-            #sensor-binding-cells = <0>;
-            bindings = <&kp C_VOLUME_UP>, <&kp C_VOLUME_DOWN>;
-        };
-        spaceenter: spaceenter {
-            compatible = "zmk,behavior-hold-tap";
-            label = "SPACEENTER";
-            bindings = <&kp SPACE>, <&kp ENTER>;
-
-            #binding-cells = <2>;
-            hold-trigger-key-positions = <43>;
-            tapping-term-ms = <22>;
-        };
     };
 
     keymap {
@@ -39,7 +24,7 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&kp GRAVE   &kp N1  &kp N2      &kp N3     &kp N4                 &kp N5                            &kp N6    &kp N7    &kp N8     &kp N9       &kp N0    &gresc
+&kp GRAVE   &kp N1  &kp N2      &kp N3     &kp N4                 &kp N5                            &kp N6    &kp N7    &kp N8     &kp N9       &kp N0    &none
 &kp TAB     &kp Q   &kp W       &kp E      &kp R                  &kp T                             &kp Y     &kp U     &kp I      &kp O        &kp P     &kp BSPC
 &kp ESCAPE  &kp A   &kp S       &kp D      &kp F                  &kp G                             &kp H     &kp J     &kp K      &kp L        &kp SEMI  &kp SQT
 &kp LSHFT   &kp Z   &kp X       &kp C      &kp V                  &kp B     &kp SPACE    &kp ENTER  &kp N     &kp M     &kp COMMA  &kp DOT      &kp FSLH  &kp RSHFT
