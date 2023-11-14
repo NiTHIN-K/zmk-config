@@ -10,6 +10,7 @@
 
 / {
     behaviors {
+&mt SPACE ENTER
     };
 
     keymap {
