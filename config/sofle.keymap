@@ -38,6 +38,8 @@
 &kp ESCAPE  &kp A   &kp S       &kp D      &kp F                  &kp G                                        &kp H     &kp J     &kp K      &kp L    &kp SEMI  &kp SQT
 &kp LSHFT   &kp Z   &kp X       &kp C      &kp V                  &kp B     &kp SPACE    &mt_impl ENTER SPACE  &kp N     &kp M     &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
                     &kp C_MUTE  &kp LCTRL  &kp LA(RA(RIGHT_ALT))  &kp LCMD  &mo 1        &mo 2                 &kp RGUI  &kp RALT  &kp RCTRL  &kp A
+                                                                   &kp A      &kp B  &kp C &kp D  &kp E
+
             >;
 
             sensor-bindings =
